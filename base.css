@@ -1,32 +1,49 @@
-html,
-body {
-	margin: 0;
-	padding: 0;
+html, body {
+    margin: 0;
+    padding: 0;
 }
-
 button {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	background: none;
-	font-size: 100%;
-	vertical-align: baseline;
-	font-family: inherit;
-	color: inherit;
-
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    color: inherit;
 }
-
 body {
-	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	line-height: 1.4em;
-	background: #eaeaea ;
-	color: #4d4d4d;
-	width: 550px;
-	margin: 0 auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	-ms-font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+    font: 14px'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #333333;
+    color: #ffffff;
+    width: 550px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 }
+button {
+    width: 100px;
+    height: 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /* border radius */
 
+-moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /* prevents bg color from leaking outside the border */
+
+background: -o-linear-gradient(bottom, #0057af 5%, #007fff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0057af), color-stop(1, #007fff));
+    background: -moz-linear-gradient(center top, #0057af 5%, #007fff 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0057af", endColorstr="#007fff");
+    background: -o-linear-gradient(top, #0057af, 007fff);
+}
+input[type="text"] {
+    display: block;
+}

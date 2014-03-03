@@ -6,11 +6,18 @@
         <link rel="stylesheet" href="base.css">
         <link rel="stylesheet" href="tablecss.css">
     </head>
+    <body>
+       
     <header>
         <h1>Contacts</h1>
-        <nav>
-            <item>Liste</item>
-            <item>Create</item>
+         <section id="createView">
+            Create Form
+        </section>
+        <section id="editView">
+            Edit Form
+        </section>
+        <nav id="menuView">
+          
         </nav>
     </header>
 
@@ -20,6 +27,7 @@
                     
                 </table>
     </section>
+
 	
 
 
@@ -30,7 +38,15 @@
 <script src="lib/triptyk/MVC/View.js"></script>
 <script src="lib/triptyk/MVC/Controller.js"></script>
 <script src="lib/contactMgr/ContactModel.js"></script>
+
 <script src="lib/contactMgr/templates/ListTemplate.js"></script>
+<script src="lib/contactMgr/templates/MenuTemplate.js"></script>
+<script src="lib/contactMgr/templates/CreateTemplate.js"></script>
+<script src="lib/contactMgr/templates/EditTemplate.js"></script>
+<script src="lib/contactMgr/views/MenuView.js"></script>
+<script src="lib/contactMgr/views/CreateView.js"></script>
+<script src="lib/contactMgr/views/EditView.js"></script>
+<script src="lib/contactMgr/views/ListView.js"></script>
 <script src="lib/triptyk/application.js"></script>
 </body>
 </html>
